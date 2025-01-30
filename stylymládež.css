@@ -1,0 +1,293 @@
+/* Reset stylů */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+/* Navigační tlačítka */
+.homepage-button, .jednotka-button, .sbor-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red; /* Červené pozadí tlačítka */
+  color: black; /* Černý text */
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  border: 1px solid black; /* Černý rámeček */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Efekt při najetí myší na tlačítko */
+.homepage-button:hover, .jednotka-button:hover, .sbor-button:hover {
+  background-color: yellow; /* Změna pozadí na žluté */
+  transform: translateY(-2px); /* Mírné zvednutí tlačítka */
+}
+
+/* Tlačítko */
+.dulezite-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: orange;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid black; /* Černý rámeček */
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.dulezite-button:hover {
+  background-color: darkorange;
+  transform: translateY(-2px);
+}
+
+/* Modal */
+.modal-overlay {
+  display: none; /* Skryté ve výchozím stavu */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  max-width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.modal h2 {
+  margin-top: 0;
+}
+
+.modal .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Checkbox Hack */
+#modal:target {
+  display: flex; /* Zobrazí modal */
+}
+
+/* Hlavička */
+.header-container {
+  display: flex;
+  flex-wrap: wrap; /* Zalomí prvky při nedostatku místa */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Nadpis */
+.nadpis {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: red;
+  -webkit-text-stroke: 1px black;
+  margin: 10px auto;
+}
+
+/* Logo */
+.logo-pravy {
+  width: 80px;
+  height: auto;
+  margin: 10px;
+}
+
+h3 {
+  font-size: 1,5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.kontejner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 20px;
+}
+
+.organizační, .vybavení, .akce {
+  background-color: rgb(224, 224, 171);
+  flex: 1;
+  min-width: 250px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.obrázek {
+  margin: 2px auto;
+  padding: 15px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.obrázek img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.fotogalerie {
+  max-width: 900px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.fotogalerie h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: red;
+}
+
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.foto {
+  width: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.foto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.foto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.overlay .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+input.lightbox:checked + .overlay {
+  display: flex;
+}
+
+.mapa h3 {
+  font-family: 'Times New Roman', Times, serif;
+  color: red;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+/* Facebook tlačítko */
+.odkazfacebook {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.btn-3d {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-3d:hover {
+  background-color: darkred;
+  transform: translateY(-2px);
+}
+
+/* Patička stránky */
+footer {
+  height: 50px;
+  background-color: #ddd;
+  text-align: center;
+  line-height: 50px;
+}
+
+/* Mediální dotazy */
+@media (max-width: 768px) {
+  .nadpis {
+      font-size: 1.5rem;
+  }
+
+  .kontejner {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .fotogalerie h2 {
+      font-size: 20px;
+  }
+
+  .foto {
+      width: 100%;
+  }
+}
