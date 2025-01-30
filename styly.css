@@ -39,11 +39,14 @@ html, body {
 header h1 {
     font-size: 4.2rem; /* Mírné zvětšení */
     font-weight: bold;
-    color: rgb(224, 224, 171); /* Světlejší barva pro lepší kontrast */
+    color: rgb(187, 82, 34); /* Světlejší barva pro lepší kontrast */
     -webkit-text-stroke: 2px black; /* Černý obrys */
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6), 6px 6px 10px rgba(0, 0, 0, 0.5), 9px 9px 15px rgba(0, 0, 0, 0.4); /* Více stínů pro 3D efekt */
     text-align: center;
     margin-bottom: 100px;
+    
+   
+    
 }
 
 h2 {
