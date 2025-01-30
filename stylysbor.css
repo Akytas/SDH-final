@@ -101,6 +101,7 @@ html, body {
     align-items: center; /* Vertikální zarovnání prvků */
     width: 100%; /* Šířka celé stránky */
     padding: 10px; /* Přidání mezer kolem obsahu */
+    background-color: rgb(218, 212, 212);
 }
 
 /* Logo */
@@ -112,10 +113,12 @@ html, body {
 
 
 .obsah {
-    font-family: 'Times New Roman', Times, serif;
-    text-align: justify;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
     margin: 20px 100px;
     font-size: clamp(12px, 2vw, 18px); /* Dynamická velikost textu */
+    
+    
 }     
 
 h2 {
@@ -140,6 +143,7 @@ h2 {
     color: black; 
     text-shadow: 2px 2px 5px black;
     margin-bottom: 20px;
+    
 }
 
 /* Kontaktní údaje */
