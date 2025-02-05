@@ -114,7 +114,6 @@ html, body {
 
 .obsah {
     font-family:'Times New Roman', Times, serif;
-   
     margin: 20px 20px;
     font-size: clamp(12px, 2vw, 18px); /* Dynamická velikost textu */
     
@@ -126,13 +125,15 @@ h2 {
     font-size: xx-large;
     text-align: center;
     color: red;
-}
+    text-decoration:underline;
+    -webkit-text-stroke: 0.5px black;
+     }
  
 /* Obrázek */
 .obrázek {
     margin: 2px auto; /* Vnější mezery: nahoře a dole */
     padding: 15px; /* Vnitřní mezera uvnitř bloku */
-    width: 30%; /* Šířka bloku */
+    width: 45%; /* Šířka bloku */
     text-align: center; /* Zarovnání textu */
 }
 
