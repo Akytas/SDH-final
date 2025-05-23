@@ -4,25 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Daniel-N">
-    <link rel="stylesheet" href="stylymládež.css">
+    <link rel="stylesheet" href="mládež.css">
     <title>Mladí hasiči</title>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-97VCCNWN6H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-97VCCNWN6H');
+</script>
 <body>
     <a href="index.html" class="homepage-button">Homepage</a>
     <a href="jednotka.html" class="jednotka-button">JSDH </a>
     <a href="sbor.html" class="sbor-button">SDH</a>
-    <a href="#modal" class="dulezite-button">Oznámení</a>
+    <a href="stahovani.html" class="stahovani-button">Ke stažení</a>
     
-    <div id="modal" class="modal-overlay">
-        <div class="modal">
-            <a href="#" class="close-button">&times;</a>
-            <h2>Oznámení</h2>
-            <p>Toto je důležité oznámení .</p>
-        </div>
-    </div>
+    
 
     <header>
         <div class="header-container">
+            <!-- Obrázek s odkazem a popiskem -->
+            <figure>
+                <a href="tabor.html" target="_blank">
+                    <img src="obrázky/tent.png" alt="Tábor" class="odkazovy-obrazek">
+                </a>
+                <figcaption>  Tábor 2025 - klikni na obrázek pro více informací </figcaption>
+            </figure>
             <h1 class="nadpis">Mladí hasiči Horoměřice</h1>
             <!-- Logo vpravo -->
             <img src="obrázky/znakořez22.png" alt="Logo vpravo" class="logo-pravy">
@@ -33,7 +43,8 @@
         <h3>Mladí hasiči jsou volnočasová aktivita, která dětem nabízí vzdělávání zaměřené na 
             oblast požární ochrany, hasičský výcvik, pohybové aktivity a sportovní reprezentaci 
             své obce v požárním sportu. <br><br>
-            Přihlášení do oddílu mladých hasičů je možné na: <a href="mailto:example@example.com">mladez@hasicihoromerice.cz</a>
+            Přihlášení do oddílu mladých hasičů je možné na: <a href="mailto:example@example.com">mladez@hasicihoromerice.cz</a> <br> <br>
+            Přihlášky do Mladých hasičů, do SDH a na letní dětský tábor najdete v sekci "Ke stažení" (navigační tlačítko v úvodu stránky)
              
         </h3>
 
@@ -53,12 +64,18 @@
 
             <div class="akce">
                 <h2>Plánované akce</h2>
-                <p>Tyto závody jsou formálně ještě součástí předešlé sezóny - to je důležité 
-                    s ohledem na zařazení dětí do soutěžních kategorií, kdy každý ještě dokončuje 
-                    v té, ve které soutěžil v červnu. 3.5.2025 - 
-                    Dětská hasičská liga (požární útok) - 
-                    Křížkový Újezdec - přeloženo z 14.9.2024, závod je součástí 
-                    sezóny DHL 2024 <br><br>
+                <p>Termíny závodů Okresní ligy Praha-západ v požárním útoku: <br> <br>
+
+                    1. kolo 27. 4. 2025 Bojanovice <br>
+                    2. a 3. kolo 14. a 15. 6. 2025 Horoměřice  <br>
+                    4. a 5. kolo 13. a 14. 9. 2025 Psáry <br> <br>
+                     3. 5. 2025 poslední kolo dětské hasičské ligy 2024 Křížkový Újezdec a
+                     vyhlášení celé ligy 2024 (týká se dětí, které běžely DHL v loňském roce). <br> <br>
+                   11. 10. 2025 slavnostní vyhodnocení okresní ligy v 
+                    požárním útoku kulturní sál Psáry.
+                    
+                    
+                    <br><br>
                     Připojte si  <a href="https://calendar.google.com/calendar/u/0/r?cid=Y19mZDQ3MmJhMDY3NjBmOTIxODU1NjViMTNkNDAxZjFjNjBjYTVjNmFhMTcwZjk5M2UyZjUzYzVjOTQ1NzU3NjIwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20" target="_blank"> Google Kalendář</a>
                 </p>
             </div>
@@ -66,13 +83,19 @@
 <!-- při odstranění letáku odstraň  kontajner i v css-->
         <div class="kontainer2">
             <div class="leták">
-                <img src="obrázky/hasišákvtipný.webp" alt="náborový leták" class="zoom">
-                <h4> Náborový leták  oddílu Mladých hasičů </h4>
+                <img src="obrázky/leták.jpg" alt="náborový leták" class="zoom">
+                <h4> Náborový leták   Mladých hasičů </h4>
          </div>
-
     <div class="obrázek">
         <img src="obrázky/fire-4757133_640.webp" alt="obrázek útok">
     </div>
+    <div class="kontainer3">
+        <div class="kalendář">
+            <iframe src="https://calendar.google.com/calendar/embed?src=c_fd472ba06760f92185565b13d401f1c60ca5c6aa170f993e2f53c5c945757620%40group.calendar.google.com&ctz=Europe%2FPrague" style="border: 0" width="600" height="600" frameborder="0" scrolling="no">
+            </iframe>
+        </div>
+    </div>
+    
 </div>
     <!--vlastnost k letáku -->
    
@@ -81,10 +104,11 @@
         <img class="modal-content" id="fullImg">
     </div>
     
+    
 </div>
 
         <div class="fotogalerie">
-            <h2> <a href="mládažfofo.html" Fotogalerie target="_blank"> Fotogalerie zde </a> </h2>
+            <h2> <a href="mládežfofo.html" Fotogalerie target="_blank"> Fotogalerie zde </a> </h2>
             <div class="galerie">
                 <label for="img1" class="foto">
                     <img src="obrmládež/1.jpg" alt="Popis obrázku 1">
