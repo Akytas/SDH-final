@@ -141,49 +141,62 @@ footer {
 
 /* Responzivní úpravy pro menší obrazovky */
 
-/* Pro obrazovky menší než 768px (tablety a mobilní telefony) */
+
+
+/* Pro obrazovky menší než 768px (tablety a mobily) */
 @media screen and (max-width: 768px) {
     .homepage-button, .jednotka-button, .mládež-button, .sbor-button,
     .stahovani-button {
-        font-size: 14px; /* Menší písmo na mobilních zařízeních */
-        padding: 8px 16px; /* Zmenšení velikosti tlačítek */
+        font-size: 14px;
+        padding: 8px 16px;
     }
 
     .header-container {
-        flex-direction: column; /* Uspořádání prvků ve sloupci */
-        text-align: center; /* Zarovnání textu na střed */
+        flex-direction: column;
+        text-align: center;
     }
 
     .logo-pravy {
-        width: 60px; /* Zmenšení velikosti loga */
+        width: 60px;
         margin: 15px;
     }
 
     .kontajner {
-        justify-content: space-around; /* Rozložení obrázků více vedle sebe */
-        margin: 15px;
+        flex-direction: column;      /* Lepší rozložení na výšku */
+        align-items: center;
+        margin: 10px;
     }
 
-    .obrázek {
-        width: 100%; /* Obrázky budou mít šířku 100% */
-        padding: 10px;
+    .pergamen {
+        width: 90vw;                 /* téměř celá šířka obrazovky */
+        min-width: unset;
+        padding: 20px 5vw;           /* menší vnitřní odsazení */
+        font-size: 1rem;             /* menší písmo */
+    }
+
+    .dokumenty-ke-stazeni a {
+        font-size: 1.1rem;
+    }
+
+    .dokumenty-ke-stazeni li {
+        font-size: 1.3rem;
     }
 
     h2 {
-        font-size: 1.5rem; /* Menší font pro h2 */
+        font-size: 1.5rem;
     }
 
     footer {
-        font-size: 14px; /* Menší písmo pro patičku */
+        font-size: 14px;
     }
 }
 
-/* Pro obrazovky menší než 480px (mobilní telefony) */
+/* Pro obrazovky menší než 480px (mobily) */
 @media screen and (max-width: 480px) {
     .homepage-button, .jednotka-button, .mládež-button, .sbor-button,
     .stahovani-button {
-        font-size: 12px; /* Ještě menší písmo */
-        padding: 6px 12px; /* Ještě menší tlačítka */
+        font-size: 12px;
+        padding: 6px 8px;
     }
 
     .header-container {
@@ -191,21 +204,29 @@ footer {
     }
 
     .logo-pravy {
-        width: 50px; /* Ještě menší logo */
+        width: 40px;
     }
 
-    .obrázek {
-        width: 100%; /* Obrázky se přizpůsobí šířce */
+    .pergamen {
+        width: 98vw;
+        padding: 10px 1vw;
+        font-size: 0.95rem;
+    }
+
+    .dokumenty-ke-stazeni a {
+        font-size: 1rem;
+    }
+
+    .dokumenty-ke-stazeni li {
+        font-size: 1.1rem;
     }
 
     h2 {
-        font-size: 1.2rem; /* Menší text pro nadpisy */
+        font-size: 1.1rem;
     }
 
     footer {
-        font-size: 12px; /* Ještě menší písmo pro patičku */
+        font-size: 12px;
     }
 }
-
-
 
