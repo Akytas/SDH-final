@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel-N">
+    <link rel="stylesheet" href="aktuality.css">
+    <title>Aktuality a oznámení - SDH Horoměřice</title>
+</head>
+<body>
+    <!-- Navigační menu -->
+    <nav class="navigation">
+        <div class="nav-logo">
+            <img src="obrázky/znakořez22.png" alt="Logo SDH" class="nav-logo-img">
+        </div>
+        <a href="index.html" class="nav-button homepage-button">Domů</a>
+        <a href="jednotka.html" class="nav-button jednotka-button">JSDH</a>
+        <a href="aktuality.html" class="nav-button aktuality-button active">Aktuality - oznámení</a>
+        <a href="#" class="nav-button stahovani-button" onclick="openDownloadModal()">Ke stažení</a>
+        <a href="studovna.html" class="nav-button studovna-button">Studovna</a>
+    </nav>
+
+    <!-- Hlavní obsah -->
+    <main class="main-content">
+        <section class="intro-section">
+            <h1>Aktuality a oznámení</h1>
+            <p>Zde najdete nejnovější informace, oznámení a aktuality  SDH Horoměřice.</p>
+        </section>
+
+        <!-- Nástěnka s aktualitami -->
+        <section class="notice-board">
+            <div class="board-header">
+                <h2>Nástěnka</h2>
+                <div class="board-stats">
+                    <span class="new-count" id="newCount">3 nové</span>
+                    <span class="total-count" id="totalCount">5 celkem</span>
+                </div>
+            </div>
+
+            <div class="notices-grid" id="noticesGrid">
+                <!-- Aktuality se budou přidávat zde -->
+                
+                <!-- Vzorové aktuality -->
+                <article class="notice-card" data-id="1" data-date="2025-12-14">
+                    <div class="notice-pin"></div>
+                    <div class="notice-header">
+                        <h3>Vánoční besídka 2025</h3>
+                        <span class="notice-date">14. 12. 2025</span>
+                        <span class="notice-status new">NOVÉ</span>
+                    </div>
+                    <div class="notice-content">
+                        <p>Zveme všechny členy a jejich rodiny na tradiční vánoční besídku, která se koná 22. prosince od 17:00 hodin v hasičské zbrojnici.</p>
+                        <p><strong>Program:</strong> Vánoční koledy, malé občerstvení, předání dárků pro děti</p>
+                    </div>
+                    <div class="notice-footer">
+                        <span class="notice-category">Akce</span>
+                        <button class="notice-read-btn" onclick="markAsRead(1)">Označit jako přečtené</button>
+                    </div>
+                </article>
+
+                <article class="notice-card" data-id="2" data-date="2025-12-10">
+                    <div class="notice-pin"></div>
+                    <div class="notice-header">
+                        <h3>Nová hasičská technika</h3>
+                        <span class="notice-date">10. 12. 2025</span>
+                        <span class="notice-status new">NOVÉ</span>
+                    </div>
+                    <div class="notice-content">
+                        <p>SDH Horoměřice získalo novou techniku díka dotaci z kraje. Jedná se o vysokotlaké čerpadlo a nové hadice.</p>
+                        <p>Zaškolení všech členů proběhne 18. prosince od 19:00 hodin.</p>
+                    </div>
+                    <div class="notice-footer">
+                        <span class="notice-category">Technika</span>
+                        <button class="notice-read-btn" onclick="markAsRead(2)">Označit jako přečtené</button>
+                    </div>
+                </article>
+
+                <article class="notice-card" data-id="3" data-date="2025-12-05">
+                    <div class="notice-pin"></div>
+                    <div class="notice-header">
+                        <h3>Změna času schůzky</h3>
+                        <span class="notice-date">5. 12. 2025</span>
+                        <span class="notice-status new">NOVÉ</span>
+                    </div>
+                    <div class="notice-content">
+                        <p>Měsíční schůzka v prosinci se přesouvá z 15. prosince na 20. prosince z důvodu vánoční besídky.</p>
+                        <p>Začátek v obvyklém čase - 19:00 hodin v hasičské zbrojnici.</p>
+                    </div>
+                    <div class="notice-footer">
+                        <span class="notice-category">Oznámení</span>
+                        <button class="notice-read-btn" onclick="markAsRead(3)">Označit jako přečtené</button>
+                    </div>
+                </article>
+
+                <article class="notice-card read" data-id="4" data-date="2025-11-28">
+                    <div class="notice-pin"></div>
+                    <div class="notice-header">
+                        <h3>Úspěšné cvičení</h3>
+                        <span class="notice-date">28. 11. 2025</span>
+                        <span class="notice-status read">PŘEČTENO</span>
+                    </div>
+                    <div class="notice-content">
+                        <p>Dne 25. listopadu proběhlo úspěšné společné cvičení s SDH Statenice. Cvičení se zaměřilo na zásah při požáru objektu.</p>
+                    </div>
+                    <div class="notice-footer">
+                        <span class="notice-category">Cvičení</span>
+                        <button class="notice-read-btn" onclick="markAsUnread(4)">Označit jako nepřečtené</button>
+                    </div>
+                </article>
+
+                <article class="notice-card read" data-id="5" data-date="2025-11-20">
+                    <div class="notice-pin"></div>
+                    <div class="notice-header">
+                        <h3>Poděkování za pomoc</h3>
+                        <span class="notice-date">20. 11. 2025</span>
+                        <span class="notice-status read">PŘEČTENO</span>
+                    </div>
+                    <div class="notice-content">
+                        <p>Starosta obce děkuje všem hasičům za rychlou a profesionální pomoc při nedávném zásahu u požáru garáže na Hlavní ulici.</p>
+                    </div>
+                    <div class="notice-footer">
+                        <span class="notice-category">Poděkování</span>
+                        <button class="notice-read-btn" onclick="markAsUnread(5)">Označit jako nepřečtené</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Patička stránky -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright">&copy; 2026 Hasiči Horoměřice. Všechna práva vyhrazena.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Funkce pro správu přečtených aktualit
+        function loadReadStatus() {
+            const readItems = JSON.parse(localStorage.getItem('readNotices') || '[]');
+            readItems.forEach(id => {
+                const notice = document.querySelector(`[data-id="${id}"]`);
+                if (notice) {
+                    notice.classList.add('read');
+                    const status = notice.querySelector('.notice-status');
+                    const button = notice.querySelector('.notice-read-btn');
+                    if (status) {
+                        status.textContent = 'PŘEČTENO';
+                        status.className = 'notice-status read'; // Správná třída
+                    }
+                    if (button) {
+                        button.textContent = 'Označit jako nepřečtené';
+                        button.onclick = () => markAsUnread(id);
+                    }
+                }
+            });
+            updateStats();
+        }
+
+        function markAsRead(id) {
+            const readItems = JSON.parse(localStorage.getItem('readNotices') || '[]');
+            if (!readItems.includes(id)) {
+                readItems.push(id);
+                localStorage.setItem('readNotices', JSON.stringify(readItems));
+            }
+            
+            const notice = document.querySelector(`[data-id="${id}"]`);
+            notice.classList.add('read');
+            const status = notice.querySelector('.notice-status');
+            const button = notice.querySelector('.notice-read-btn');
+            status.textContent = 'PŘEČTENO';
+            status.className = 'notice-status read'; // Změna třídy na 'read'
+            button.textContent = 'Označit jako nepřečtené';
+            button.onclick = () => markAsUnread(id);
+            
+            updateStats();
+        }
+
+        function markAsUnread(id) {
+            const readItems = JSON.parse(localStorage.getItem('readNotices') || '[]');
+            const index = readItems.indexOf(id);
+            if (index > -1) {
+                readItems.splice(index, 1);
+                localStorage.setItem('readNotices', JSON.stringify(readItems));
+            }
+            
+            const notice = document.querySelector(`[data-id="${id}"]`);
+            notice.classList.remove('read');
+            const status = notice.querySelector('.notice-status');
+            const button = notice.querySelector('.notice-read-btn');
+            status.textContent = 'NOVÉ';
+            status.className = 'notice-status new'; // Změna třídy na 'new'
+            button.textContent = 'Označit jako přečtené';
+            button.onclick = () => markAsRead(id);
+            
+            updateStats();
+        }
+
+        function updateStats() {
+            const totalNotices = document.querySelectorAll('.notice-card').length;
+            const newNotices = document.querySelectorAll('.notice-card:not(.read)').length;
+            
+            document.getElementById('newCount').textContent = `${newNotices} nové`;
+            document.getElementById('totalCount').textContent = `${totalNotices} celkem`;
+        }
+
+        // Načtení při načtení stránky
+        document.addEventListener('DOMContentLoaded', loadReadStatus);
+    </script>
+
+    <!-- Externí JavaScript soubor pro sdílené funkce -->
+    <script src="script.js"></script>
+
+    <!-- Modal pro stahování -->
+    <div id="downloadModal" class="modal">
+        <div class="modal-overlay" onclick="closeDownloadModal()"></div>
+        <div class="modal-container download-modal">
+            <div class="modal-header">
+                <h2>📁 Ke stažení - SDH Horoměřice</h2>
+                <button class="modal-close" onclick="closeDownloadModal()">&times;</button>
+            </div>
+            
+            <div class="modal-content">
+                <div class="download-categories">
+                    
+                    <!-- SDH kategorie -->
+                    <div class="download-category">
+                        <div class="category-header">
+                            <h3>🏢 SDH</h3>                                     
+                            <span class="file-count"></span>
+                        </div>
+                        <div class="files-grid">
+                            <div class="file-card" onclick="downloadFile('soubory/prihlaska-clen-hasic.pdf', 'SDH')">
+                                <div class="file-icon pdf">📝</div>
+                                <div class="file-info">
+                                    <h4>Přihláška člena SDH</h4>
+                                    <p>Formulář pro nové členy</p>
+                                </div>
+                                <div class="download-btn">⬇️</div>
+                            </div>
+                            
+                            <div class="file-card" onclick="downloadFile('soubory/prihlaska-clen-mlady-hasic.pdf', 'SDH')">
+                                <div class="file-icon word">📝</div>
+                                <div class="file-info">
+                                    <h4>Přihláška člena Mládeže</h4>
+                                    <p>Formulář pro nové členy</p>
+                                </div>
+                                <div class="download-btn">⬇️</div>
+                            </div>
+                            
+                            <div class="file-card" onclick="downloadFile('soubory/bezpecnostni-predpisy.pdf', 'SDH')">
+                                <div class="file-icon pdf">📝</div>
+                                <div class="file-info">
+                                    <h4>Bezpečnostní předpisy</h4>
+                                    <p>BOZP při zásazích</p>
+                                </div>
+                                <div class="download-btn">⬇️</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tábor kategorie -->
+                    <div class="download-category">
+                        <div class="category-header">
+                            <h3>🏕️ Tábor</h3>
+                            <span class="file-count"></span>
+                        </div>
+                        <div class="files-grid">
+                            <div class="file-card" onclick="downloadFile('souboryTabor/Přihláška-LDT-SDH-Horo.pdf', 'Tabor')">
+                                <div class="file-icon pdf">📝</div>
+                                <div class="file-info">
+                                    <h4>Přihláška LDT SDH Horoměřice</h4>
+                                    <p>Oficiální přihláška na letní dětský tábor</p>
+                                </div>
+                                <div class="download-btn">⬇️</div>
+                            </div>
+                            
+                            <div class="file-card" onclick="downloadFile('souboryTabor/22. Posudek-o-zdravotní-způsobulosti-dítěte.pdf', 'Tabor')">
+                                <div class="file-icon pdf">📝</div>
+                                <div class="file-info">
+                                    <h4>Posudek o zdravotní způsobilosti</h4>
+                                    <p>Lékařský posudek pro účast na táboře</p>
+                                </div>
+                                <div class="download-btn">⬇️</div>
+                            </div>
+                            
+                            <div class="file-card" onclick="downloadFile('souboryTabor/23. Čestné-prohlášení-BEZINFEKČNOST.pdf', 'Tabor')">
+                                <div class="file-icon pdf">📝</div>
+                                <div class="file-info">
+                                    <h4>Čestné prohlášení - bezinfekčnost</h4>
+                                    <p>Prohlášení o zdravotním stavu</p>
+                                </div>
+                                <div class="download-btn">⬇️</div>
+                            </div>
+                            
+                            <div class="file-card" onclick="downloadFile('souboryTabor/24. Nástupní-list-dítěte.pdf', 'Tabor')">
+                                <div class="file-icon pdf">📝</div>
+                                <div class="file-info">
+                                    <h4>Nástupní list dítěte</h4>
+                                    <p>Formulář pro nástup na tábor</p>
+                                </div>
+                                <div class="download-btn">⬇️</div>
+                            </div>
+                            
+                            <div class="file-card" onclick="downloadFile('souboryTabor/25. Souhlas-s-podáváním-léčiv.pdf', 'Tabor')">
+                                <div class="file-icon pdf">📝</div>
+                                <div class="file-info">
+                                    <h4>Souhlas s podáváním léčiv</h4>
+                                    <p>Souhlas pro podávání léků</p>
+                                </div>
+                                <div class="download-btn">⬇️</div>
+                            </div>
+                            
+                            <div class="file-card" onclick="downloadFile('souboryTabor/Doporučený-seznam-věcí.docx', 'Tabor')">
+                                <div class="file-icon word">📝</div>
+                                <div class="file-info">
+                                    <h4>Doporučený seznam věcí</h4>
+                                    <p>Co si vzít na tábor</p>
+                                </div>
+                                <div class="download-btn">⬇️</div>
+                            </div>
+                            
+                            <div class="file-card" onclick="downloadFile('souboryTabor/Smluvní-podmínky-LDT.docx', 'Tabor')">
+                                <div class="file-icon word">📝</div>
+                                <div class="file-info">
+                                    <h4>Smluvní podmínky LDT</h4>
+                                    <p>Podmínky účasti na táboře</p>
+                                </div>
+                                <div class="download-btn">⬇️</div>
+                            </div>
+                            
+                            <div class="file-card" onclick="downloadFile('souboryTabor/Táborový-řád.docx', 'Tabor')">
+                                <div class="file-icon word">📝</div>
+                                <div class="file-info">
+                                    <h4>Táborový řád</h4>
+                                    <p>Pravidla a režim tábora</p>
+                                </div>
+                                <div class="download-btn">⬇️</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

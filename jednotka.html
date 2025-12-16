@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel-N">
+    <link rel="stylesheet" href="jednotka.css">
+    <title>JSDH Horoměřice - SDH Horoměřice</title>
+</head>
+<body>
+    <!-- Navigační menu -->
+    <nav class="navigation">
+        <div class="nav-logo">
+            <img src="obrázky/znakořez22.png" alt="Logo SDH" class="nav-logo-img">
+        </div>
+        <a href="index.html" class="nav-button homepage-button">Domů</a>
+        
+        <a href="aktuality.html" class="nav-button aktuality-button">Aktuality - oznámení</a>
+        <a href="#" class="nav-button stahovani-button" onclick="openDownloadModal()">Ke stažení</a>
+        <a href="studovna.html" class="nav-button studovna-button">Studovna</a>
+    </nav>
+
+    <!-- Hero sekce -->
+    <section class="hero-section jsdh-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">JSDH Horoměřice</h1>
+            <p class="hero-subtitle">Jednotka Sboru Dobrovolných Hasičů</p>
+            <div class="hero-buttons">
+                <div class="hero-logo-inline">
+                    <img src="obrázky/znakořez22.png" alt="Logo SDH" class="hero-logo-inline-img">
+                </div>
+                <a href="#obsah" class="hero-btn primary">Začít</a>
+                <a href="#technika" class="hero-btn secondary">Naše technika</a>
+                <a href="#" class="hero-btn secondary" onclick="openContactModal()">Kontakty</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Hlavní obsah -->
+    <main class="main-content" id="obsah">
+        <!-- Úvodní text -->
+        <section class="intro-section animate-on-scroll">
+            <h2>JSDH Horoměřice</h2>
+            <p>Sbor dobrovolných hasičů v Horoměřicích byl založen v roce 1898. Sbor byl založen v podobném
+              období jako mnoho jiných dobrovolných hasičských sborů v českých zemích, 
+              tedy v 19. století, kdy se začaly tyto sbory masivně zakládat jako reakce na 
+              časté požáry a potřebu organizované pomoci.</p> <br>
+            <p>Jednotka sboru dobrovolných hasičů (JSDH) Horoměřice je zařazena do
+             kategorie JPO V, což znamená, že působí v rámci svého územního obvodu a je vybavena 
+             pro zásahy menšího rozsahu. V případě potřeby může být povolána i k zásahům mimo svůj 
+             obvod. JSDH Horoměřice je v současnosti aktivním sborem, který se pravidelně účastní 
+            zásahů při požárech, dopravních nehodách a jiných mimořádných událostech. 
+            Sbor se také angažuje v preventivní činnosti, jako jsou kontroly požární bezpečnosti 
+            a osvětové akce pro veřejnost.</p>
+
+            <section class="image-section">
+            <div class="image-container">
+                <img src="obrázky/hasič nápis.png" alt="Popisný text obrázku" style="width: 30%; height: auto;">
+                
+            </div>
+        </section>
+        </section>
+
+        <!-- Oddělovník -->
+        <div class="section-divider">
+            <div class="divider-line"></div>
+            <div class="divider-icon">🚒</div>
+            <div class="divider-line"></div>
+        </div>
+
+        <!-- Sekce Naše technika -->
+        <section class="intro-section animate-on-scroll" id="technika">
+            <h2>Fotogalerie techniky</h2>
+
+            <!-- Naše současná technika -->
+            <div class="gallery-category">
+                <h3 class="gallery-title">🚒 Naše současná technika</h3>
+                <div class="gallery-grid current-tech">
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="obrázky/Tatra815.webp" alt="Tatra 815">
+                        <div class="gallery-overlay">
+                            <h4>Tatra 815</h4>
+                            <p>CAS 32/9000/0 - S3R</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="obrázky/Denis1.webp" alt="Dennis Rapier">
+                        <div class="gallery-overlay">
+                            <h4>DENNIS Rapier</h4>
+                            <p>CAS 24/1800 M1R</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="obrázky/DA.webp" alt="Fiat Ducato">
+                        <div class="gallery-overlay">
+                            <h4>Fiat Ducato</h4>
+                            <p>Dopravní automobil</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Naše bývalá technika -->
+            <div class="gallery-category">
+                <h3 class="gallery-title">🏛️ Naše bývalá technika</h3>
+                <div class="gallery-grid past-tech">
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="obrázky/148upraTEXT.webp" alt="Tatra 148">
+                        <div class="gallery-overlay">
+                            <h4>Tatra 148</h4>
+                            <p>CAS 32/8000/800</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="obrázky/liazvupravtext.webp" alt="LIAZ 101">
+                        <div class="gallery-overlay">
+                            <h4>LIAZ 101</h4>
+                            <p>CAS 25/3500/200</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="obrázky/AviaupravTEXT.webp" alt="Avia">
+                        <div class="gallery-overlay">
+                            <h4>Avia</h4>
+                            <p>DA 12</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="image-section">
+            <div class="image-container">
+                <img src="obrázky/813cas.png" alt="Popisný text obrázku" style="width: 50%; height: auto;">
+                <p class="image-caption"> Tatra 813 8x8 CAS 55 SLF 18000 S3VH</p>
+            </div>
+        </section>
+        </section>
+
+        <!-- Oddělovník -->
+        <div class="section-divider">
+            <div class="divider-line"></div>
+            <div class="divider-icon">🔥</div>
+            <div class="divider-line"></div>
+        </div>
+
+        <!-- Sekce Členství -->
+        <section class="membership-section animate-on-scroll" id="clenstvo">
+            <h2>Členství v JSDH</h2>
+            <h4>Jednotka sboru dobrovolných hasičů Horoměřice má v současné době 14 aktivních členů</h4>
+            <p>Členem jednotky sboru dobrovolných hasičů (JSDH) se může stát osoba, která splňuje
+             určité podmínky. Tyto podmínky se mohou lišit podle konkrétní obce a jejího 
+             zřizovatele, ale obecně platí:</p>
+            
+            <!-- Kontejner pro tři sloupce -->
+            <section class="content-grid">
+                <div class="content-card animate-on-scroll fade-up">
+                    <h3>Základní požadavky</h3>
+                    <p>✅ <strong>Věk</strong> – Obvykle minimálně 18 let, ale mladší zájemci se mohou stát členy SDH a později přejít do JSDH.<br>
+                    ✅ <strong>Zdravotní způsobilost</strong> – Je nutné projít lékařskou prohlídkou.<br>
+                    ✅ <strong>Fyzická zdatnost</strong> – Pro aktivní členy je důležitá dobrá fyzická kondice.</p>
+                </div>
+
+                <div class="content-card animate-on-scroll fade-up">
+                    <h3>Další podmínky</h3>
+                    <p>✅ <strong>Bezúhonnost</strong> – U některých funkcí může být vyžadován výpis z trestního rejstříku.<br>
+                    ✅ <strong>Školení a výcvik</strong> – Noví členové musí absolvovat povinné kurzy, např. základní odbornou přípravu hasiče.<br>
+                    ✅ <strong>Řidičské oprávnění</strong> – Výhodou jsou řidičské skupiny C, D.</p>
+                </div>
+
+                <div class="content-card animate-on-scroll fade-up">
+                    <h3>Co nabízíme</h3>
+                    <p>🚒 <strong>Hasičská technika</strong> – Práce s hasičskými vozidly, motorovými pilami, přenosnými čerpadly a další hasičskou technikou<br>
+                    🎓 <strong>Vzdělávání</strong> – Pravidelná školení a kurzy<br>
+                    🤝 <strong>Soudržnost</strong> – Být součástí skvělého týmu</p>
+                </div>
+            </section>
+        <!-- Oddělovník -->
+        <div class="section-divider">
+            <div class="divider-line"></div>
+            <div class="divider-icon">👨‍🚒</div>
+            <div class="divider-line"></div>
+        </div>
+
+        <!-- Sekce Vedení JSDH -->
+        <section class="intro-section animate-on-scroll" id="vedeni-jsdh">
+            <h2>Vedení JSDH Horoměřice</h2>
+            <div class="leadership-avatars">
+                <div class="avatar-card">
+                    <div class="avatar-icon">👨‍✈️</div>
+                    <div class="avatar-info">
+                        <h3>Velitel jednotky</h3>
+                        <p>Petr Klain</p>
+                    </div>
+                </div>
+                
+                <div class="avatar-card">
+                    <div class="avatar-icon">👨‍💼</div>
+                    <div class="avatar-info">
+                        <h3>Zástupce velitele</h3>
+                        <p>Jiří Smutný</p>
+                    </div>
+                </div>
+                
+                <div class="avatar-card">
+                    <div class="avatar-icon">🔧</div>
+                    <div class="avatar-info">
+                        <h3>Vedoucí dílny</h3>
+                        <p>Martin Kubaš</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sekce pro obrázek -->
+        <section class="image-section">
+            <div class="image-container">
+                <img src="obrázky/ŠkodaYeti.png" alt="Hasič v akci" style="width: 50%; height: auto;">
+                <p class="image-caption">Velitelský vůz Škoda Yeti</p>
+            </div>
+        </section>
+        <!-- Oddělovník -->
+        <div class="section-divider">
+            <div class="divider-line"></div>
+            <div class="divider-icon">📝</div>
+            <div class="divider-line"></div>
+        </div>
+
+        <!-- Kontaktní formulář -->
+        <section class="intro-section animate-on-scroll" id="prihlaska">
+            <h2>Přidej se do JSDH Horoměřice</h2>
+            <p>Máte zájem stát se členem naší jednotky? Vyplňte krátký formulář a my se vám ozveme co nejdříve.</p>
+            
+            <div class="content-grid">
+                <div class="content-card animate-on-scroll fade-up form-container">
+                    <form action="mailto:hasici@horomerice.cz" method="post" enctype="text/plain" class="modern-form">
+                        <div class="form-row">
+                            <div class="form-field">
+                                <input type="text" id="jmeno" name="jmeno" required placeholder=" ">
+                                <label for="jmeno">Jméno</label>
+                            </div>
+                            <div class="form-field">
+                                <input type="text" id="prijmeni" name="prijmeni" required placeholder=" ">
+                                <label for="prijmeni">Příjmení</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-field age-field">
+                            <input type="number" id="vek" name="vek" min="18" required placeholder=" ">
+                            <label for="vek">Věk</label>
+                        </div>
+
+                        <fieldset class="driving-license-fieldset">
+                            <legend>Řidičské oprávnění</legend>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="ridicska" value="B">
+                                    <span class="checkbox-custom"></span>
+                                    B
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="ridicska" value="C">
+                                    <span class="checkbox-custom"></span>
+                                    C
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="ridicska" value="D">
+                                    <span class="checkbox-custom"></span>
+                                    D
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="ridicska" value="E">
+                                    <span class="checkbox-custom"></span>
+                                    E
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-row">
+                            <div class="form-field">
+                                <input type="email" id="email" name="email" placeholder=" ">
+                                <label for="email">E-mail</label>
+                            </div>
+                            <div class="form-field">
+                                <input type="tel" id="telefon" name="telefon" placeholder=" ">
+                                <label for="telefon">Telefon</label>
+                            </div>
+                        </div>
+
+                        <div class="form-field">
+                            <textarea id="zprava" name="zprava" rows="4" placeholder=" "></textarea>
+                            <label for="zprava">Zpráva</label>
+                        </div>
+
+                        <button type="submit" class="submit-button">
+                            <span class="button-text">Odeslat přihlášku</span>
+                            <span class="button-icon">🚒</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating contact button -->
+    <a href="https://www.facebook.com/JSDHHoromerice" class="floating-contact" title="JSDH Facebook" target="_blank">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+        </svg>
+    </a>
+
+    <!-- Patička stránky -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright">&copy; 2026 Hasiči Horoměřice. Všechna práva vyhrazena.</p>
+        </div>
+    </footer>
+
+    <!-- Modal pro kontakty -->
+    <div id="contactModal" class="modal">
+        <div class="modal-overlay" onclick="closeContactModal()"></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2>Kontakty</h2>
+                <button class="modal-close" onclick="closeContactModal()">&times;</button>
+            </div>
+            
+            <div class="modal-content">
+                <div class="contact-grid">
+                    <!-- JSDH -->
+                    <div class="contact-section">
+                        <h3>🚒 JSDH Horoměřice</h3>
+                        <div class="contact-item">
+                            <span class="contact-label">Email:</span>
+                            <a href="mailto:hasici@horomerice.cz" class="contact-value">hasici@horomerice.cz</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Facebook:</span>
+                            <a href="https://www.facebook.com/JSDHHoromerice" target="_blank" class="contact-value">JSDH Horoměřice</a>
+                        </div>
+                    </div>
+
+                    <!-- SDH -->
+                    <div class="contact-section">
+                        <h3>🏢 SDH Horoměřice</h3>
+                        <div class="contact-item">
+                            <span class="contact-label">Email:</span>
+                            <a href="mailto:sdh@hasicihoromerice.cz" class="contact-value">sdh@hasicihoromerice.cz</a>
+                        </div>
+                    </div>
+
+                    <!-- Mládež -->
+                    <div class="contact-section">
+                        <h3>🔥 Mládež</h3>
+                        <div class="contact-item">
+                            <span class="contact-label">Email:</span>
+                            <a href="mailto:mladez@hasicihoromerice.cz" class="contact-value">mladez@hasicihoromerice.cz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Progress Button -->
+    <div id="scrollToTop" class="scroll-to-top">
+        <svg class="progress-ring" width="60" height="60">
+            <circle class="progress-ring-circle" stroke="#c0392b" stroke-width="3" fill="transparent" r="26" cx="30" cy="30"/>
+        </svg>
+        <div class="scroll-icon">↑</div>
+    </div>
+
+    <!-- Externí JavaScript soubory -->
+    <script src="files-config.js"></script>
+    <script src="script.js"></script></body>
+</html>

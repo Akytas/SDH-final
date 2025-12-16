@@ -1,0 +1,685 @@
+/* ===== RESET A ZÁKLADNÍ STYLY ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #2c3e50;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ecf0f1 100%);
+}
+
+/* ===== NAVIGACE ===== */
+.navigation {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 30px;
+  background: rgba(44, 62, 80, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(149, 165, 166, 0.3);
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.2);
+  z-index: 100;
+  margin: 0 20px;
+}
+
+.nav-logo {
+  margin-right: 15px;
+}
+
+.nav-logo-img {
+  width: 45px;
+  height: auto;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease;
+}
+
+.nav-logo-img:hover {
+  transform: scale(1.05);
+}
+
+.nav-button {
+  display: inline-block;
+  padding: 14px 28px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.homepage-button, .jednotka-button, .sbor-button, .aktuality-button, .studovna-button {
+  background: rgba(236, 240, 241, 0.25);
+  color: #2c3e50;
+  border: 1px solid rgba(149, 165, 166, 0.4);
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.1);
+}
+
+.studovna-button {
+  margin-left: auto;
+}
+
+.stahovani-button {
+  background: rgba(149, 165, 166, 0.3);
+  color: #fff;
+  border: 1px solid rgba(149, 165, 166, 0.5);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.homepage-button:hover, .jednotka-button:hover, .sbor-button:hover, .aktuality-button:hover, .studovna-button:hover {
+  background: rgba(255, 255, 255, 0.4);
+  color: #2c3e50;
+  border: 1px solid rgba(149, 165, 166, 0.6);
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(149, 165, 166, 0.3);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.stahovani-button:hover {
+  background: rgba(127, 140, 141, 0.5);
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(127, 140, 141, 0.4);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+/* ===== HLAVNÍ OBSAH ===== */
+.main-content {
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.intro-section {
+  text-align: center;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.intro-section h1 {
+  font-size: 3rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.intro-section p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ===== STRÁNKA AKTUALIT ===== */
+
+/* Aktivní stav tlačítka v navigaci */
+.nav-button.active {
+    background: rgba(192, 57, 43, 0.2) !important;
+    color: #c0392b !important;
+    border: 2px solid rgba(192, 57, 43, 0.4) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(192, 57, 43, 0.2);
+}
+
+/* ===== NÁSTĚNKA AKTUALIT ===== */
+.notice-board {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.board-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    border-bottom: 3px solid #c0392b;
+}
+
+.board-header h2 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.board-stats {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.new-count, .total-count {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.new-count {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+    animation: pulse 2s infinite;
+}
+
+.total-count {
+    background: rgba(149, 165, 166, 0.2);
+    color: #2c3e50;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* ===== GRID AKTUALIT ===== */
+.notices-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+}
+
+/* ===== KARTIČKY AKTUALIT ===== */
+.notice-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #e74c3c;
+    transform: rotate(-1deg);
+}
+
+.notice-card:nth-child(2n) {
+    transform: rotate(1deg);
+}
+
+.notice-card:nth-child(3n) {
+    transform: rotate(-0.5deg);
+}
+
+.notice-card.read {
+    border-color: #95a5a6;
+    opacity: 0.8;
+    filter: grayscale(20%);
+}
+
+.notice-card:hover {
+    transform: rotate(0deg) translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+/* Špendlík */
+.notice-pin {
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #c0392b, #8b0000);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    z-index: 5;
+}
+
+.notice-pin::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+/* ===== OBSAH KARTIČKY ===== */
+.notice-header {
+    padding: 25px 20px 15px;
+    border-bottom: 1px solid #ecf0f1;
+    position: relative;
+}
+
+.notice-header h3 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    line-height: 1.3;
+}
+
+.notice-date {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    font-weight: 500;
+}
+
+.notice-status {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.notice-status.new {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+    animation: newBlink 1.5s ease-in-out infinite;
+}
+
+.notice-status.read {
+    background: #95a5a6;
+    color: white;
+}
+
+@keyframes newBlink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.notice-content {
+    padding: 20px;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.notice-content p {
+    margin: 0 0 15px 0;
+}
+
+.notice-content p:last-child {
+    margin-bottom: 0;
+}
+
+.notice-footer {
+    padding: 15px 20px;
+    background: rgba(236, 240, 241, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.notice-category {
+    padding: 5px 12px;
+    background: rgba(52, 73, 94, 0.1);
+    color: #2c3e50;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.notice-read-btn {
+    padding: 8px 15px;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.notice-read-btn:hover {
+    background: linear-gradient(135deg, #2980b9, #1f5f99);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+.notice-card.read .notice-read-btn {
+    background: linear-gradient(135deg, #95a5a6, #7f8c8d);
+}
+
+.notice-card.read .notice-read-btn:hover {
+    background: linear-gradient(135deg, #7f8c8d, #6c7b7d);
+}
+
+/* ===== RESPONZIVNÍ DESIGN ===== */
+@media (max-width: 768px) {
+    .notices-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px 0;
+    }
+    
+    .board-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .board-header h2 {
+        font-size: 2rem;
+    }
+    
+    .board-stats {
+        justify-content: center;
+    }
+    
+    .notice-footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .notice-card {
+        margin: 0 10px;
+    }
+    
+    .notice-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .notice-content {
+        padding: 15px;
+    }
+    
+    .new-count, .total-count {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}
+
+/* ===== SCROLL ANIMACE ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.notice-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.notice-card:nth-child(1) { animation-delay: 0.1s; }
+.notice-card:nth-child(2) { animation-delay: 0.2s; }
+.notice-card:nth-child(3) { animation-delay: 0.3s; }
+.notice-card:nth-child(4) { animation-delay: 0.4s; }
+.notice-card:nth-child(5) { animation-delay: 0.5s; }
+
+/* ===== RESPONZIVNÍ NAVIGACE ===== */
+@media (max-width: 768px) {
+  .intro-section h1 {
+    font-size: 2.2rem;
+  }
+  
+  .board-header h2 {
+    font-size: 2rem;
+  }
+  
+  .navigation {
+    justify-content: center;
+    padding: 10px 12px;
+    margin: 0 10px;
+    border-radius: 0 0 20px 20px;
+    background: rgba(44, 62, 80, 0.2);
+  }
+  
+  .nav-button {
+    padding: 8px 16px;
+    font-size: 12px;
+    border-radius: 20px;
+  }
+  
+  .main-content {
+    padding: 20px 10px;
+  }
+  
+  .intro-section, .notice-board {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-section h1 {
+    font-size: 1.8rem;
+  }
+  
+  .board-header h2 {
+    font-size: 1.7rem;
+  }
+  
+  .nav-button {
+    padding: 6px 12px;
+    font-size: 11px;
+    letter-spacing: 0.4px;
+    font-weight: 500;
+  }
+  
+  .main-content {
+    padding: 20px 10px;
+  }
+  
+  .intro-section, .notice-board {
+    padding: 15px;
+  }
+}
+
+/* ===== MODAL STYLY ===== */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+}
+
+.modal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+.download-modal {
+  width: 800px;
+}
+
+.modal-header {
+  padding: 25px 30px;
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.modal-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.modal-content {
+  padding: 30px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.download-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.download-category {
+  border: 1px solid #ecf0f1;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+.category-header h3 {
+  color: #2c3e50;
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.files-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.file-card {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ecf0f1;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #f8f9fa;
+}
+
+.file-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-color: #3498db;
+}
+
+.file-icon {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  width: 40px;
+  text-align: center;
+}
+
+.file-info {
+  flex: 1;
+}
+
+.file-info h4 {
+  margin: 0 0 5px 0;
+  color: #2c3e50;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.file-info p {
+  margin: 0;
+  color: #7f8c8d;
+  font-size: 0.85rem;
+}
+
+.download-btn {
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+
+/* ===== PATIČKA ===== */
+.footer {
+  background: linear-gradient(135deg, #2d3436, #636e72);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.copyright {
+  font-size: 1rem;
+  opacity: 0.9;
+}

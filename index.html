@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel-N">
+    <link rel="stylesheet" href="index.css">
+    <title>SDH Horoměřice</title>
+</head>
+<body>
+    <!-- Navigační menu -->
+    <nav class="navigation">
+        <div class="nav-logo">
+            <img src="obrázky/znakořez22.png" alt="Logo SDH" class="nav-logo-img">
+        </div>
+        <a href="jednotka.html" class="nav-button jednotka-button">JSDH</a>
+        <a href="aktuality.html" class="nav-button aktuality-button">Aktuality - oznámení</a>
+        <a href="#" class="nav-button stahovani-button" onclick="openDownloadModal()">Ke stažení</a>
+        <a href="studovna.html" class="nav-button studovna-button">Studovna</a>
+    </nav>
+
+    <!-- Hero sekce -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">SDH Horoměřice</h1>
+            <p class="hero-subtitle">Sbor Dobrovolných Hasičů</p>
+            <div class="hero-buttons">
+                <div class="hero-logo-inline">
+                    <img src="obrázky/znakořez22.png" alt="Logo SDH" class="hero-logo-inline-img">
+                </div>
+                <a href="#obsah" class="hero-btn primary">Začít</a>
+                <a href="#mladez" class="hero-btn secondary">Mládež</a>
+                <a href="#" class="hero-btn secondary" onclick="openContactModal()">Kontakty</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+
+
+    <!-- Hlavní obsah -->
+    <main class="main-content" id="obsah">
+        <!-- Úvodní text -->
+        <section class="intro-section animate-on-scroll">
+            <h2>SDH</h2>
+            <p>Sbor dobrovolných hasičů (SDH) Horoměřice je občanské sdružení zaměřené na požární ochranu a 
+                související činnosti v obci Horoměřice. Jedná se o neziskovou organizaci,
+                 která je založena na práci dobrovolníků a financována z příspěvků členů, 
+                 darů obce, státních institucí, občanů a firem.</p> <br>
+            <p>Hlavními aktivitami SDH jsou požární ochrana, prevence a práce s mládeží. Sbor se podílí na 
+                odborné přípravě členů Jednotky sboru dobrovolných hasičů (JSDH), údržbě požární techniky a
+                 objektů požární ochrany, včetně vodních zdrojů, a provádí preventivní činnosti zaměřené na
+                 předcházení požárům. SDH Horoměřice organizuje volnočasové aktivity pro děti a mládež,
+                 známé jako "Mladí hasiči Horoměřice". Tato činnost zahrnuje vzdělávání v oblasti požární 
+                 ochrany, hasičský výcvik, pohybové aktivity a sportovní reprezentaci obce v požárním sportu. SDH pořádá různé akce pro veřejnost, například hasičský ples.</p>     
+        </section>
+
+         <section class="image-section">
+            <div class="image-container">
+                <img src="obrázky/DA Ducato.png" alt="Popisný text obrázku" style="width: 50%; height: auto;">
+                <p class="image-caption">DA Fiat Ducato</p>
+            </div>
+        </section>
+
+        <!-- Oddělovník -->
+        <div class="section-divider">
+            <div class="divider-line"></div>
+            <div class="divider-icon">🚒</div>
+            <div class="divider-line"></div>
+        </div>
+        
+       
+
+        <!-- Sekce Vedení SDH -->
+        <section class="intro-section animate-on-scroll" id="vedeni">
+            <h2>Struktura a vedení SDH Horoměřice</h2>
+            <div class="leadership-avatars">
+                <div class="avatar-card">
+                    <div class="avatar-icon">👩‍💼</div>
+                    <div class="avatar-info">
+                        <h3>Starostka</h3>
+                        <p>Alžběta Slavíčková</p>
+                    </div>
+                </div>
+                
+                <div class="avatar-card">
+                    <div class="avatar-icon">👩‍💻</div>
+                    <div class="avatar-info">
+                        <h3>Náměstkyně SDH</h3>
+                        <p>Romana Krušinová</p>
+                    </div>
+                </div>
+                
+                <div class="avatar-card">
+                    <div class="avatar-icon">👨‍💼</div>
+                    <div class="avatar-info">
+                        <h3>Hospodář</h3>
+                        <p>Jan Merta</p>
+                    </div>
+                </div>
+                
+                <div class="avatar-card">
+                    <div class="avatar-icon">👨‍🏫</div>
+                    <div class="avatar-info">
+                        <h3>Vedoucí mládeže</h3>
+                        <p>Martin Kubaš</p>
+                    </div>
+                </div>
+                
+                <div class="avatar-card">
+                    <div class="avatar-icon">👨‍✈️</div>
+                    <div class="avatar-info">
+                        <h3>Velitel sboru</h3>
+                        <p>Alexandr Splítek</p>
+                    </div>
+                </div>
+                
+                <div class="avatar-card">
+                    <div class="avatar-icon">👩‍🔬</div>
+                    <div class="avatar-info">
+                        <h3>Revizor SDH</h3>
+                        <p>Tereza Moravčíková</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Oddělovník -->
+        <div class="section-divider">
+            <div class="divider-line"></div>
+            <div class="divider-icon">🔥</div>
+            <div class="divider-line"></div>
+        </div>
+
+        <!-- Sekce Mládež -->
+        <section class="intro-section animate-on-scroll" id="mladez">
+            <h2>Mládež</h2>
+            <p>Mladí hasiči jsou volnočasová aktivita, která dětem nabízí vzdělávání zaměřené na oblast požární ochrany, hasičský výcvik, pohybové aktivity
+                 a sportovní reprezentaci své obce v požárním sportu. Přihlášení do oddílu mladých hasičů je možné na: mladez@hasicihoromerice.cz</p>
+        </section>
+        
+        <section class="image-section">
+            <div class="image-container">
+                <img src="obrázky/mládež 6.png" alt="Popisný text obrázku" style="width: 50%; height: auto;">
+                <p class="image-caption">Hasičská mládež</p>
+            </div>
+            
+        </section>
+         
+
+        <!-- Oddělovník -->
+        <div class="section-divider">
+            <div class="divider-line"></div>
+            <div class="divider-icon">🚒</div>
+            <div class="divider-line"></div>
+        </div>
+
+        <!-- Kontejner pro tři sloupce -->
+        <section class="content-grid">
+            <div class="content-card animate-on-scroll fade-up">
+                <h3>Organizační informace</h3>
+                <p>Poplatek za kroužek mladých hasičů je za období září až prosinec 1200,-Kč, za období leden až červen 1800,-Kč
+                 Platba probíhá bezhotovostně na účet 2002035425/2010,
+                !!! v poznámce platby uveďte jméno svého mladého hasiče!!!
+
+                -příspěvky za 1. pololetí jsou splatné do 30. září
+                -příspěvky za 2. pololetí jsou splatné do 30. ledna
+                Poplatek zahrnuje vybavení pro děti určené pro výcvik, 
+                dresy, helmy, oddílová trička, provoz hřiště apod. <br>DŮLEŽITÉ:  prosíme o zasílání všech plateb s variabilním symbolem, který naleznete
+                <a href="https://docs.google.com/spreadsheets/d/1EmRFz_31h1rWxH7zzjhBz3H-JAUbNBC27awZtxt54Kk/edit?gid=1318815894#gid=1318815894" target="_blank">zde</a></p>
+            </div>
+
+            <div class="content-card animate-on-scroll fade-up">
+                <h3>Vybavení na trénink</h3>
+                <p>Tréninky probíhají na našem hřišti a v tělocvičně ZŠ. Tréninky probíhají každou středu takto: <br>
+                    - mladší kategorie má tréninky od 15:00h - do 16:30h <br>
+                    - starší kategorie má tréninky od 16:45h - do 18:15h <br>
+                    Na tréninky v tělocvičně děti potřebují to samé jako na tělocvik, vč. vhodné sálové obuvi nezanechávající čáry na podlaze
+                    - často je taková obuv označena "non-marking".</p>
+            </div>
+
+            <div class="content-card animate-on-scroll fade-up">
+                <h3>Plánované akce</h3>
+                <p>Akce na rok 2026-připravujeme</p>
+            </div>
+            
+        </section>
+         
+        <section class="intro-section animate-on-scroll" id="vedeni">
+            <h2>Google kalendář akci</h2>
+
+         <p> Připojte si  <a href="https://calendar.google.com/calendar/u/0/r?cid=Y19mZDQ3MmJhMDY3NjBmOTIxODU1NjViMTNkNDAxZjFjNjBjYTVjNmFhMTcwZjk5M2UyZjUzYzVjOTQ1NzU3NjIwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20" target="_blank"> Google Kalendář</a></p>
+         <div class="kalendář">
+            <iframe src="https://calendar.google.com/calendar/embed?src=c_fd472ba06760f92185565b13d401f1c60ca5c6aa170f993e2f53c5c945757620%40group.calendar.google.com&ctz=Europe%2FPrague" frameborder="0" scrolling="no">
+            </iframe>
+        </div>
+        </section>
+        <div class="section-divider">
+            <div class="divider-line"></div>
+            <div class="divider-icon">🔥</div>
+            <div class="divider-line"></div>
+        </div>
+
+        <!-- Sekce pro obrázek nebo další obsah -->
+        <section class="image-section">
+            <div class="image-container">
+                <img src="obrázky/PS12.png" alt="Popisný text obrázku" style="width: 50%; height: auto;">
+                <p class="image-caption">Přenosná motorová stříkačka PS 12</p>
+            </div>
+        </section>
+
+        <!-- Fotogalerie -->
+        <section class="gallery-section animate-on-scroll">
+            <h2 class="section-title">Fotogalerie</h2>
+            <div class="gallery">
+                <div class="photo" onclick="openLightbox(0)">
+                    <img src="obrázky2/1.jpg" alt="Foto 1" loading="lazy">
+                </div>
+                <div class="photo" onclick="openLightbox(1)">
+                    <img src="obrázky2/2.jpg" alt="Foto 2" loading="lazy">
+                </div>
+                <div class="photo" onclick="openLightbox(2)">
+                    <img src="obrázky2/3.jpg" alt="Foto 3" loading="lazy">
+                </div>
+                <div class="photo" onclick="openLightbox(3)">
+                    <img src="obrázky2/4.jpg" alt="Foto 4" loading="lazy">
+                </div>
+                <div class="photo" onclick="openLightbox(4)">
+                    <img src="obrázky2/5.jpg" alt="Foto 5" loading="lazy">
+                </div>
+                <div class="photo" onclick="openLightbox(5)">
+                    <img src="obrázky2/6.jpg" alt="Foto 6" loading="lazy">
+                </div>
+                <div class="photo" onclick="openLightbox(6)">
+                    <img src="obrázky2/7.jpg" alt="Foto 7" loading="lazy">
+                </div>
+                <div class="photo" onclick="openLightbox(7)">
+                    <img src="obrázky2/8.jpg" alt="Foto 8" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div id="lightboxModal" class="lightbox-modal">
+            <div class="lightbox-overlay" onclick="closeLightbox()"></div>
+            <div class="lightbox-content">
+                <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+                <button class="lightbox-prev" onclick="prevImage()">&#8249;</button>
+                <img id="lightboxImage" src="" alt="">
+                <button class="lightbox-next" onclick="nextImage()">&#8250;</button>
+                <div class="lightbox-counter">
+                    <span id="lightboxCounter">1 / 8</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mapa (volitelná) -->
+        <section class="map-section">
+            <h3>Hasičské hřiště Horoměřice</h3>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.123!2d14.349820601465295!3d50.131913074898875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bc15ebd24da01%3A0x5e9444ad7adf4b61!2zSGFzacSNc2vDqSBoxZVpxaF0xJsgSG9yb23Em8WZaWNl!5e1!3m2!1scs!2scz!4v1734997154727!5m2!1scs!2scz" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Mapa umístění">
+                </iframe>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <!-- Floating contact button -->
+    <a href="https://www.facebook.com/groups/3460172157604332" class="floating-contact" title="Facebook" target="_blank">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+        </svg>
+    </a>
+
+
+
+    <h3 class="sponsors-section-title">naši hlavní sponzoři</h3>
+
+<div class="sponsors">
+  <a href="https://www.letistepraha.cz/" target="_blank">
+    <img src="sponzoři/Prague_airport_logo_czech.svg.png" alt="Letiště Praha" class="sponsor-logo">
+  </a>
+  <a href="https://www.horomerice.cz/" target="_blank">
+    <img src="sponzoři/Horomerice_CoA_CZ.svg.png" alt="Obec Horoměřice" class="sponsor-logo">
+  </a>
+  <a href="https://www.stavbyfaj.cz/"  target="_blank">
+    <img src="sponzoři/FAJ_gold_web_72dpi_RGB.avif" alt="Stavby Faj" class="sponsor-logo">
+  </a>
+  <a href="https://www.statenice.cz/" target="_blank">
+    <img src="sponzoři/statenice.png" alt="Obec Statenice" class="sponsor-logo">
+  </a>
+  <a href="https://malkiel.cz/" target="_blank">
+    <img src="sponzoři/malkiel-logo-dark.png" alt="Malkiel s.r.o." class="sponsor-logo">
+  </a>
+  <a href="https://www.mareka.com/" target="_blank"> 
+    <img src="sponzoři/logo-mareka-white-web-white-01.png" alt="MAREKA s.r.o." class="sponsor-logo">
+  </a>
+  <a href="https://www.wolfsystem.cz/" target="_blank"  > 
+    <img src="sponzoři/Wolf_System_Logo.svg.png" alt="WOLF system" class="sponsor-logo">
+  </a>
+  <a href="https://autoservispraha6.cz/" target="_blank">
+    <img src="sponzoři/red2.png" alt="Autoservis Kříž" class="sponsor-logo">
+  </a>
+  <a href="https://www.solatube.cz/"   target="_blank">
+    <img src="sponzoři/solatube-logo-transparent.png" alt="WT - Windows Tomorrow" class="sponsor-logo">
+  </a>
+</div>
+
+    <!-- Patička stránky -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright">&copy; 2026 Hasiči Horoměřice. Všechna práva vyhrazena.</p>
+        </div>
+    </footer>
+
+    <!-- Modal pro kontakty -->
+    <div id="contactModal" class="modal">
+        <div class="modal-overlay" onclick="closeContactModal()"></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2> Kontakty</h2>
+                <button class="modal-close" onclick="closeContactModal()">&times;</button>
+            </div>
+            
+            <div class="modal-content">
+                <div class="contact-grid">
+                    <!-- SDH -->
+                    <div class="contact-section">
+                        <h3>🏢 SDH Horoměřice</h3>
+                        <div class="contact-item">
+                            <span class="contact-label">Adresa:</span>
+                            <span class="contact-value">Požárníků 360 <br>
+                                 252 62 Horoměřice <br>
+                                 Datová schránka: y4nejwr <br>
+                               IČO: 05104530<br></span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Email:</span>
+                            <a href="mailto:sdh@hasicihoromerice.cz" class="contact-value">sdh@hasicihoromerice.cz</a>
+                        </div>
+                    </div>
+
+                    <!-- Mládež -->
+                    <div class="contact-section">
+                        <h3>🔥 Mládež</h3>
+                        <div class="contact-item">
+                            <span class="contact-label">Email:</span>
+                            <a href="mailto:mladez@hasicihoromerice.cz" class="contact-value">mladez@hasicihoromerice.cz</a>
+                        </div>
+                    </div>
+
+                    <!-- Hasičská zbrojnice -->
+                    <div class="contact-section">
+                        <h3>🚒 Hasičská zbrojnice</h3>
+                        <div class="contact-item">
+                            <span class="contact-label">Adresa:</span>
+                            <span class="contact-value">Požárníků 360 <br>
+                                 252 62 Horoměřice</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Email:</span>
+                            <a href="mailto:hasici@horomerice.cz" class="contact-value">hasici@horomerice.cz</a>
+                        </div>
+                    </div>
+                </div>
+
+               
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Floating Progress Button -->
+    <div id="scrollToTop" class="scroll-to-top">
+        <svg class="progress-ring" width="60" height="60">
+            <circle class="progress-ring-circle" stroke="#c0392b" stroke-width="3" fill="transparent" r="26" cx="30" cy="30"/>
+        </svg>
+        <div class="scroll-icon">↑</div>
+    </div>
+
+    <!-- Externí JavaScript soubory -->
+    <script src="files-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
